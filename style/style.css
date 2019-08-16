@@ -155,51 +155,51 @@ body {
         background-size: cover;
         position: relative; }
       #sidebar #page_links ul li .profile_link {
-        background-image: url(../../assets/icons/profile.png); }
+        background-image: url(../assets/icons/profile.png); }
       #sidebar #page_links ul li .profile_link:hover {
-        background-image: url(../../assets/icons/profile_on.png); }
+        background-image: url(../assets/icons/profile_on.png); }
       #sidebar #page_links ul li .profile_link.on_it {
-        background-image: url(../../assets/icons/profile_on.png); }
+        background-image: url(../assets/icons/profile_on.png); }
       #sidebar #page_links ul li .voting_link {
-        background-image: url(../../assets/icons/voting.png); }
+        background-image: url(../assets/icons/voting.png); }
       #sidebar #page_links ul li .voting_link:hover {
-        background-image: url(../../assets/icons/voting_hover.png); }
+        background-image: url(../assets/icons/voting_hover.png); }
       #sidebar #page_links ul li .voting_link.on_it {
-        background-image: url(../../assets/icons/voting_on.png); }
+        background-image: url(../assets/icons/voting_on.png); }
       #sidebar #page_links ul li .events_link {
-        background-image: url(../../assets/icons/calendar.png); }
+        background-image: url(../assets/icons/calendar.png); }
       #sidebar #page_links ul li .events_link:hover {
-        background-image: url(../../assets/icons/calendar_hover.png); }
+        background-image: url(../assets/icons/calendar_hover.png); }
       #sidebar #page_links ul li .events_link.on_it {
-        background-image: url(../../assets/icons/calendar_on.png); }
+        background-image: url(../assets/icons/calendar_on.png); }
       #sidebar #page_links ul li .balance_link.on_it {
-        background-image: url(../../assets/icons/points_on.png); }
+        background-image: url(../assets/icons/points_on.png); }
       #sidebar #page_links ul li .balance_link {
-        background-image: url(../../assets/icons/points.png); }
+        background-image: url(../assets/icons/points.png); }
       #sidebar #page_links ul li .balance_link:hover {
-        background-image: url(../../assets/icons/points_hover.png); }
+        background-image: url(../assets/icons/points_hover.png); }
       #sidebar #page_links ul li .timetable_link {
-        background-image: url(../../assets/icons/timetable.png); }
+        background-image: url(../assets/icons/timetable.png); }
       #sidebar #page_links ul li .timetable_link:hover {
-        background-image: url(../../assets/icons/time_hover.png); }
+        background-image: url(../assets/icons/time_hover.png); }
       #sidebar #page_links ul li .marks_link {
-        background-image: url(../../assets/icons/marks.png); }
+        background-image: url(../assets/icons/marks.png); }
       #sidebar #page_links ul li .marks_link:hover {
-        background-image: url(../../assets/icons/mark_hover.png); }
+        background-image: url(../assets/icons/mark_hover.png); }
       #sidebar #page_links ul li .marks_link.on_it {
-        background-image: url(../../assets/icons/mark_on.png); }
+        background-image: url(../assets/icons/mark_on.png); }
       #sidebar #page_links ul li .ask_link {
-        background-image: url(../../assets/icons/QA.png); }
+        background-image: url(../assets/icons/QA.png); }
       #sidebar #page_links ul li .ask_link.on_it {
-        background-image: url(../../assets/icons/QA_on.png); }
+        background-image: url(../assets/icons/QA_on.png); }
       #sidebar #page_links ul li .ask_link:hover {
-        background-image: url(../../assets/icons/QA_hover.png); }
+        background-image: url(../assets/icons/QA_hover.png); }
       #sidebar #page_links ul li .docs_link {
-        background-image: url(../../assets/icons/docs.png); }
+        background-image: url(../assets/icons/docs.png); }
       #sidebar #page_links ul li .docs_link.on_it {
-        background-image: url(../../assets/icons/docs_on.png); }
+        background-image: url(../assets/icons/docs_on.png); }
       #sidebar #page_links ul li .docs_link:hover {
-        background-image: url(../../assets/icons/docs_hover.png); }
+        background-image: url(../assets/icons/docs_hover.png); }
 
 #sidebar.sidebar_open {
   width: 250px;
@@ -358,11 +358,11 @@ header {
       cursor: pointer;
       position: relative; }
     header ul .notification_toggle {
-      background-image: url(/assets/icons/notifications.png); }
+      background-image: url(../assets/icons/notifications.png); }
     header ul .settings {
-      background-image: url(/assets/icons/settings.png); }
+      background-image: url(../assets/icons/settings.png); }
     header ul .lang_toggle {
-      background-image: url(/assets/svg/russian-flag.svg); }
+      background-image: url(../assets/svg/russian-flag.svg); }
 
 .notification_toggle .note_cont {
   visibility: hidden;
@@ -467,7 +467,7 @@ header {
     font-size: 28px;
     margin-right: 10px; }
   .profile_balance_show span:last-of-type {
-    color: #EDA235; }
+    font-weight: 700; }
 
 .profile_info {
   margin-bottom: 20px; }
@@ -651,3 +651,43 @@ form.login_form {
 
 .md_margin_b {
   margin-bottom: 20px; }
+
+#settings {
+  width: 100%;
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.sm_form_control {
+  border-radius: 10px;
+  border: 1px solid #c7c7c7;
+  height: 40px;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px; }
+
+.sm_margin_b {
+  margin-bottom: 10px; }
+
+.lg_margin_b {
+  margin-bottom: 30px; }
+
+.sm_button {
+  border-radius: 10px;
+  height: 40px; }
+
+.flex_1 {
+  flex: 1 1 auto; }
+
+.themes_change {
+  min-width: 500px;
+  max-width: 500px;
+  width: 40%;
+  margin-left: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -1px #c7c7c7;
+  padding: 10px 30px; }
+
+.sm_margin_r {
+  margin-right: 10px; }
