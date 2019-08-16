@@ -467,7 +467,7 @@ header {
     font-size: 28px;
     margin-right: 10px; }
   .profile_balance_show span:last-of-type {
-    font-weight: 700; }
+    color: #EDA235; }
 
 .profile_info {
   margin-bottom: 20px; }
