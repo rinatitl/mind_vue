@@ -1,0 +1,111 @@
+.timetable_cont {
+    padding: 0;
+    max-width: 400px;
+    min-width: 400px;
+    width: 30%;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    .timetable_header {
+        padding: 10px 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+
+    .day_select {
+        position: absolute;
+        width: 160px;
+        border-radius: 5px;
+        top: 60px;
+        font-size: 18px;
+        right: 10px;
+        list-style: none;
+        background: white;
+        box-shadow: 0px 0px 15px -2px #eeeeee;
+
+        li {
+            margin: 10px 0;
+            margin-right: 20px;
+            height: 20px;
+            text-align: right;
+            margin-left: 20px;
+            color: $blue;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        li:hover {
+            color: $orange_hover;
+        } 
+    }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.timetable_input_block {
+    position: relative;
+    width: 140px;
+    height: 20px;
+    cursor: pointer;
+
+    input {
+        width: 100%;
+        text-align: right;
+        font-size: 18px;
+        position: absolute;
+        bottom: 0;
+        color: $blue;
+        transition: color 0.3s;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    input:disabled {
+        background: transparent;
+    }
+
+
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+        right: 0;
+        bottom: 3px;
+        background-image: url("../assets/icons/arrow_down.png");
+        transition: transform 0.3s, background-image 0.3s;
+        transform: rotate(0deg);
+        cursor: pointer;
+    }
+}
+
+.timetable_input_block:hover {
+
+    input {
+        color: $blue_hover;
+    }
+
+    .arrow {
+        background-image: url('../assets/icons/down_arrow_hover.png');
+    }
+}
+
+.timetable_input_block.arrow_up {
+
+    input {
+        color: $orange;
+    }
+
+    .arrow {
+        background-image: url('../assets/icons/arrow_down_click.png');
+        transform: rotate(-180deg);
+    }
+
+}

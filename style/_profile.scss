@@ -1,0 +1,71 @@
+#profile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.profile_info_section {
+    margin-right: 10px;
+    flex: 1 1 auto;
+}
+
+.profile_block {
+    min-width: 660px;
+}
+
+.profile_header {
+
+    .profile_image {
+        height: 180px;
+        min-width: 180px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+    }
+
+    .profile_name {
+        height: 180px;
+        flex: 1 1 auto;
+        display: flex;
+        padding-left: 40px;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+
+        h2 {
+            font-size: 50px;
+        }
+
+        .surname {
+            margin-top: -10px;
+        }
+    }
+
+}
+
+.profile_balance {
+    justify-content: space-between;
+    min-width: 660px;
+
+}
+
+.profile_balance_show {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        color: $blue;
+        font-weight: 600;
+        font-size: 28px;
+        margin-right: 10px;
+    }
+
+    span:last-of-type {
+        color: $orange;
+    }
+}
+
+.profile_info {
+    margin-bottom: 20px;
+}

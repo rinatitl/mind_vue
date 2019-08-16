@@ -1,0 +1,69 @@
+@import '_variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    color: $dark_grey;
+}
+
+html {
+    font-size: 20px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: $bg_color;
+}
+
+
+body {
+    display: flex;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+.visible.head_main {
+    filter: blur(3px);
+    transition: filter 0.3s;
+}
+
+.head_main {
+    flex: 1 1 auto;
+    margin-left: 85px;
+    transition: filter 0.3s;
+}
+
+.temp_cont {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -1px $light_grey;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.hr {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+
+
+@import '_sidebar.scss';
+
+@import '_header.scss';
+
+@import '_main_container.scss';
+
+@import '_profile.scss';
+
+@import '_timetable.scss';

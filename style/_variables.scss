@@ -1,0 +1,71 @@
+// $bg_color : #edeef0; 
+$bg_color: #ffffff;
+$blue: #0168b3;
+$black : #0A101d;
+$orange : #EDA235;
+$blue_hover : #0387d8;
+$grey : #7c7c7c;
+$light_grey : #c7c7c7;
+$orange_hover : #F9AA4B;
+$red : #EF2A23;
+$green: #4BB543;
+$dark_grey : #444444;
+
+// ADDITIONALS
+
+button {
+    border-style: none;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+button#transfer {
+    background: white;
+    color: $orange;
+    border: 2px solid $orange;
+}
+
+button#transfer:hover {
+    background: $orange;
+    color: white;
+}
+
+
+button#history_link {
+    background: white;
+    border: 2px solid $blue;
+    color: $blue;   
+}
+
+button#history_link:hover {
+    background: $blue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+select:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+input:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+input {
+    border-style: none;
+}
