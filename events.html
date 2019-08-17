@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Мероприятия</title>
+</head>
+<body>
+    <div id="app">
+        <!-- COMMENTS FOR DEVELOPING REMOVE BEFORE PRODUCTION -->
+        <!-- LEFT SIDEBAR -->
+        <sidebar></sidebar>
+        <div class="head_main">
+            <!-- COMPONENT HEADER -->
+            <header>
+                <div id="logo">
+                    <a href="/">
+                        <img src="assets/img/logo_30.png" alt="">
+                    </a>
+                </div>  
+                <!-- COMPONENT WITH OPTIONS -->
+                <options></options>
+            </header>
+            <!-- MAIN PART -->
+            <main class="main_container">
+                <div class="scroll_container">
+                    <div class="container_body">
+                        <!-- TEMPLATE PARTS -->
+                        <section id="events">
+
+                            <events-toggle><events-toggle>
+
+                        </section>
+                        <!-- END OF TEMPLATE -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" ></script>
+
+    <script src="js/profile.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
