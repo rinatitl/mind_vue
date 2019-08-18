@@ -7,7 +7,6 @@ const eventstoggle = Vue.component('eventstoggle' , {
                 <section class="new_events" v-show="isNew">
                     <div class="one_event md_margin_b">
                         <h3 class="sm_margin_b">Лекция по кибербезопасности</h3>
-                        <span class=""></span>
                         <div class="datetag sm_margin_b">    
                             <img src="assets/icons/date.png" class="datetag_img" alt="">
                             <span>14.08.2019</span>
@@ -34,9 +33,15 @@ const eventstoggle = Vue.component('eventstoggle' , {
                             <img src="assets/icons/clock.png" class="geotag_img" alt="">
                             <span>10:00</span>
                         </div>
-                        <div class="geotag">    
+                        <div class="geotag md_margin_b">    
                             <img src="assets/icons/geotag.png" class="geotag_img" alt="">
                             <span>аудитория 325</span>
+                        </div>
+	                    <div class="rate">
+							<div class="rate_img happy_rate" :class="h_active_rate" v-on:click="happyRate"></div>
+							<div class="rate_img aver_rate" :class="a_active_rate" v-on:click="averageRate"></div>
+							<div class="rate_img sad_rate" :class="s_active_rate" v-on:click="sadRate"></div>
+	                    </div>
                         </div>
                     </div>
                 </section></div>`,
@@ -44,7 +49,10 @@ const eventstoggle = Vue.component('eventstoggle' , {
         return {
             isNew: true,
             newActive: 'active',
-            oldActive: ''
+            oldActive: '',
+            h_active_rate: '',
+            a_active_rate: '',
+            s_active_rate: ''
         };
     },
     methods : {
@@ -57,6 +65,21 @@ const eventstoggle = Vue.component('eventstoggle' , {
             this.isNew = false;
             this.newActive = '';
             this.oldActive = 'active';
+        },
+        happyRate : function(e) {
+            this.h_active_rate = 'active_rate';
+            this.a_active_rate = '';
+            this.s_active_rate = '';
+        },
+        averageRate : function(e) {
+            this.h_active_rate = '';
+            this.a_active_rate = 'active_rate';
+            this.s_active_rate = '';
+        },
+        sadRate : function(e) {
+            this.h_active_rate = '';
+            this.a_active_rate = '';
+            this.s_active_rate = 'active_rate';
         }
     }
 

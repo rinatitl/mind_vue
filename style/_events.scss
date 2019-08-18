@@ -65,6 +65,43 @@
 	width: 30px;
 	margin-right: 10px;
 }
+.rate {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.rate_img {
+	margin-right: 5px;
+	cursor: pointer;
+	padding: 25px;
+}
+.old_events .datetag,
+.old_events .timetag,
+.old_events .geotag {
+	width: 50%;
+}
+.happy_rate {
+	background: url(../assets/icons/happy.png);
+}
+.happy_rate.active_rate {
+	background: url(../assets/icons/happy_active.png);
+}
+.aver_rate {
+	background: url(../assets/icons/aver.png);
+}
+.aver_rate.active_rate {
+	background: url(../assets/icons/aver_active.png);
+}
+.sad_rate {
+	background: url(../assets/icons/sad.png);
+}
+.sad_rate.active_rate {
+	background: url(../assets/icons/sad_active.png);
+}
 .vue_wrapper {
 	width: 100%;
 }
