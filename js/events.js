@@ -42,7 +42,6 @@ const eventstoggle = Vue.component('eventstoggle' , {
 							<div class="rate_img aver_rate" :class="a_active_rate" v-on:click="averageRate"></div>
 							<div class="rate_img sad_rate" :class="s_active_rate" v-on:click="sadRate"></div>
 	                    </div>
-                        </div>
                     </div>
                 </section></div>`,
     data() {
