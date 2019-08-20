@@ -4,7 +4,6 @@ button {
   height: 40px;
   width: 180px;
   border-radius: 10px;
-  margin-left: 20px;
   color: white;
   font-size: 18px;
   transition: all 0.3s; }
@@ -91,6 +90,15 @@ body {
   height: 30px;
   margin: 10px 0; }
 
+.sm_margin_t {
+  margin-top: 10px; }
+
+.md_margin_t {
+  margin-top: 20px; }
+
+.lg_margin_t {
+  margin-top: 30px; }
+
 .xs_margin_r {
   margin-right: 5px; }
 
@@ -120,8 +128,7 @@ body {
 .blue_button {
   background: white;
   border: 2px solid #0168b3;
-  color: #0168b3;
-  margin: 0; }
+  color: #0168b3; }
 
 .blue_button:hover {
   background: #0168b3;
@@ -136,6 +143,10 @@ body {
 .orange_button:hover {
   background: #EDA235;
   color: white; }
+
+.desc_text {
+  font-size: 1.2em;
+  color: #bbb; }
 
 #sidebar {
   flex: 1 1 auto;
@@ -671,6 +682,15 @@ form.login_form {
   width: 100%;
   font-size: 16px; }
 
+.md_form_control {
+  border-radius: 10px;
+  border: 1px solid #c7c7c7;
+  height: 40px;
+  padding: 0 10px;
+  width: 60%;
+  margin-right: 40%;
+  font-size: 16px; }
+
 #settings {
   width: 100%;
   display: flex;
@@ -701,6 +721,9 @@ form.login_form {
   flex-wrap: wrap;
   max-width: 1300px;
   margin: 0 auto; }
+
+#events form {
+  width: 80%; }
 
 .events_type {
   width: 100%;
@@ -801,3 +824,77 @@ form.login_form {
 
 .vue_wrapper {
   width: 100%; }
+
+.title_flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: baseline;
+  align-items: baseline; }
+
+.title_flex h2 {
+  margin-right: 10px; }
+
+.participants_type {
+  border-radius: 15px;
+  border: 1px solid #c7c7c7;
+  padding: 0 1px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  width: 40%; }
+
+.participants_type a {
+  border-radius: 16px;
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer; }
+
+.participants_type a.active {
+  background: #EDA235;
+  color: white;
+  cursor: default; }
+
+.date_inputs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between; }
+
+.date_inputs {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; }
+
+.label_wrapper {
+  width: calc(50% - 30px); }
+
+.input_wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; }
+
+.input_wrapper input {
+  width: calc(50% - 5px); }
+
+.add_span {
+  color: #0168b3;
+  cursor: pointer; }

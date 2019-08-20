@@ -56,6 +56,15 @@ body {
     margin: 10px 0;
 }
 
+.sm_margin_t {
+    margin-top: 10px;
+}
+.md_margin_t {
+    margin-top: 20px;
+}
+.lg_margin_t {
+    margin-top: 30px;
+}
 .xs_margin_r {
     margin-right: 5px;
 }
@@ -85,8 +94,7 @@ body {
 .blue_button {
     background: white;
     border: 2px solid $blue;
-    color: $blue;
-    margin: 0;   
+    color: $blue; 
 }
 
 .blue_button:hover {
@@ -104,7 +112,10 @@ body {
     background: $orange;
     color: white;
 }
-
+.desc_text {
+    font-size: 1.2em;
+    color: #bbb;
+}
 
 @import '_sidebar.scss';
 
