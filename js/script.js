@@ -1,6 +1,6 @@
 var vm = new Vue({
     el : '#app',
-    components : {'options' : options , 'sidebar' : sidebar, timetableShow : timetable, eventsToggle : eventstoggle},
+    components : {'options' : options , 'sidebar' : sidebar, timetableShow : timetable, eventsToggle : eventstoggle, eventsAdd: eventAdd},
     data : {
 
     },
